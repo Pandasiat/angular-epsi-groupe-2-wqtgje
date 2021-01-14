@@ -1,17 +1,13 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { DashRoutingModule } from "./dash-routing.module";
-import { HomeComponent } from "./components/home/home.component";
-import {
-  MatButtonModule,
-  MatCardModule,
-  MatFormFieldModule,
-  MatInputModule,
-  MatSelectModule
-} from "@angular/material";
-import { ProfileComponent } from "./components/profile/profile.component";
-import { ReactiveFormsModule } from "@angular/forms";
-import { UserPartsModule } from "../shared/user-parts/user-parts.module";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import {DashRoutingModule} from './dash-routing.module';
+import { HomeComponent } from './components/home/home.component';
+import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatSelectModule} from '@angular/material';
+import { ProfileComponent } from './components/profile/profile.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {UserPartsModule} from '../shared/user-parts/user-parts.module';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [HomeComponent, ProfileComponent],
@@ -24,7 +20,8 @@ import { UserPartsModule } from "../shared/user-parts/user-parts.module";
     MatInputModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule,
   ]
 })
-export class DashModule {}
+export class DashModule { }

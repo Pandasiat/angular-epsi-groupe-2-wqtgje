@@ -1,12 +1,26 @@
-<h1>Page de connexion</h1>
+<h1> Page de connexion </h1>
 
 <form [formGroup]="userForm" (ngSubmit)="signin()">
   <app-email-form-field [parentFormGroup]="userForm"></app-email-form-field>
-  <app-password-form-field
-    [parentFormGroup]="userForm"
-  ></app-password-form-field>
+  <app-password-form-field [parentFormGroup]="userForm"></app-password-form-field>
   <button mat-raised-button color="accent" type="submit">Connexion</button>
 </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--<form >-->
 <!--  <mat-form-field appearance="legacy">-->
