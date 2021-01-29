@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, Validators} from '@angular/forms';
 import {AuthService} from '../../../core/services/auth.service';
 import {Router} from '@angular/router';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-signin',
@@ -15,6 +16,7 @@ export class SigninComponent implements OnInit {
     private fb: FormBuilder,
     private authService: AuthService,
     private router: Router,
+    private _snackBar: MatSnackBar
   ) {
   }
 
@@ -47,10 +49,16 @@ export class SigninComponent implements OnInit {
     ).subscribe(
       (result) => {
         // connexion est réussie !
+        this._snackBar.open("connexion est réussie !", "💖", {
+          duration: 4000,
+        });
         this.router.navigate(['dash/home']);
       },
       (err) => {
         // on peut dire à l'utilisateur qu'il n'a pas donné les bons identifiants
+        this._snackBar.open("Vos informations de sont pas correctes", "🤬", {
+          duration: 4000,
+        });
         console.log({ err });
       });
   }
