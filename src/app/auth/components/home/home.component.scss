@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+  }
+  
+.containerButton{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vw;
+}
+BUTTON {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Brush Script MT;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 15px;
+    background-color: #3D94F6;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+BUTTON:hover {
+    background: #1E62D0;
+    border: solid #0059A0 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }

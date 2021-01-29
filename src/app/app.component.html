@@ -9,11 +9,18 @@
     <button *ngIf="!isSignedIn" routerLink="/auth/signup" mat-menu-item>
       <span>S'inscrire</span>
     </button>
+    <button *ngIf="!isSignedIn" routerLink="/auth/home" mat-menu-item>
+      <span>Accueil</span>
+    </button>
     <button *ngIf="isSignedIn" routerLink="/dash/home" mat-menu-item>
       <span>Accueil</span>
     </button>
     <button *ngIf="isSignedIn" routerLink="/dash/profile" mat-menu-item>
       <span>Profil</span>
+    </button>
+    
+    <button *ngIf="isSignedIn" routerLink="/admin/profile" mat-menu-item>
+      <span>Admin</span>
     </button>
     <button *ngIf="isSignedIn" (click)="signout()" mat-menu-item>
       <span>Se déconnecter</span>
